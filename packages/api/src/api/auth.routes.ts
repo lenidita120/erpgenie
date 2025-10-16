@@ -1,14 +1,10 @@
 import { Router } from 'express';
+import { loginUser, registerUser } from '../../controllers/auth.controller'; // <-- IMPORT INI
 
 const router = Router();
 
-// Nanti controllernya kita taruh di sini
-router.post('/register', (req, res) => {
-  res.status(200).json({ message: 'Register route works!' });
-});
+router.post('/register', registerUser); // <-- GANTI INI
 
-router.post('/login', (req, res) => {
-  res.status(200).json({ message: 'Login route works!' });
-});
+router.post('/login', loginUser); // <-- GANTI INI
 
 export default router;
