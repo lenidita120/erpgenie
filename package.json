@@ -1,0 +1,21 @@
+{
+  "name": "erpgenie",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ERPGenie Monorepo",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm:dev:api\" \"npm:dev:web\"",
+    "dev:api": "npm run dev --workspace=api",
+    "dev:web": "npm run dev --workspace=web"
+  },
+  "keywords": [],
+  "author": "Jo",
+  "license": "ISC",
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
