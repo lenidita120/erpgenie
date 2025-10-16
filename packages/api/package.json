@@ -14,11 +14,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@prisma/client": "^5.14.0", // <-- TAMBAHKAN INI (Harusnya Prisma nambahin otomatis)
+    "bcryptjs": "^2.4.3", // <-- TAMBAHKAN INI
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "prisma": "^5.14.0"
   },
   "devDependencies": {
+    "@types/bcryptjs": "^2.4.6", // <-- TAMBAHKAN INI
     "@types/express": "^4.17.21",
     "@types/node": "^20.12.12",
     "ts-node-dev": "^2.0.0",
